@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="91" id="bOZ-nQ-BAW" customClass="WeatherTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bOZ-nQ-BAW" id="d4N-Gt-MQH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-wK-3R5">
+                        <rect key="frame" x="16" y="11" width="56" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="sFJ-TY-tbL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min / max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gal-lr-GIC">
+                        <rect key="frame" x="238" y="47" width="74" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="BAv-pH-Xtx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iml-U8-jsx">
+                        <rect key="frame" x="87" y="11" width="60" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="JCa-Ne-PKp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cj-Rf-f36">
+                        <rect key="frame" x="224" y="8" width="88" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IeD-wK-3R5" firstAttribute="bottom" secondItem="Iml-U8-jsx" secondAttribute="bottom" id="0a8-9i-R9f"/>
+                    <constraint firstItem="7cj-Rf-f36" firstAttribute="trailing" secondItem="d4N-Gt-MQH" secondAttribute="trailingMargin" id="8Fa-eT-DS3"/>
+                    <constraint firstItem="Iml-U8-jsx" firstAttribute="leading" secondItem="IeD-wK-3R5" secondAttribute="trailing" constant="15" id="8aS-GX-BDA"/>
+                    <constraint firstItem="gal-lr-GIC" firstAttribute="trailing" secondItem="d4N-Gt-MQH" secondAttribute="trailingMargin" id="9s1-v2-6Or"/>
+                    <constraint firstItem="gal-lr-GIC" firstAttribute="trailing" secondItem="d4N-Gt-MQH" secondAttribute="trailingMargin" id="EAT-v3-tGh"/>
+                    <constraint firstItem="gal-lr-GIC" firstAttribute="trailing" secondItem="7cj-Rf-f36" secondAttribute="trailing" id="Ib2-52-YVZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="IeD-wK-3R5" secondAttribute="bottom" constant="6" id="PNV-L4-bk9"/>
+                    <constraint firstItem="7cj-Rf-f36" firstAttribute="top" secondItem="d4N-Gt-MQH" secondAttribute="topMargin" id="Xai-Cg-3SV"/>
+                    <constraint firstItem="gal-lr-GIC" firstAttribute="bottom" secondItem="d4N-Gt-MQH" secondAttribute="bottomMargin" id="azJ-cZ-b4Z"/>
+                    <constraint firstItem="IeD-wK-3R5" firstAttribute="top" secondItem="Iml-U8-jsx" secondAttribute="top" id="bju-fd-D9s"/>
+                    <constraint firstItem="IeD-wK-3R5" firstAttribute="top" secondItem="d4N-Gt-MQH" secondAttribute="topMargin" constant="3" id="cgv-gk-B27"/>
+                    <constraint firstItem="7cj-Rf-f36" firstAttribute="top" secondItem="d4N-Gt-MQH" secondAttribute="topMargin" id="nn9-Ip-ozd"/>
+                    <constraint firstItem="gal-lr-GIC" firstAttribute="bottom" secondItem="d4N-Gt-MQH" secondAttribute="bottomMargin" id="py5-vm-nYt"/>
+                    <constraint firstItem="gal-lr-GIC" firstAttribute="trailing" secondItem="d4N-Gt-MQH" secondAttribute="trailingMargin" id="qTX-Gj-d8d"/>
+                    <constraint firstItem="gal-lr-GIC" firstAttribute="top" secondItem="7cj-Rf-f36" secondAttribute="bottom" constant="2" id="wdZ-Ud-92k"/>
+                    <constraint firstItem="IeD-wK-3R5" firstAttribute="leading" secondItem="d4N-Gt-MQH" secondAttribute="leadingMargin" constant="8" id="xSO-3f-lr6"/>
+                    <constraint firstItem="7cj-Rf-f36" firstAttribute="trailing" secondItem="d4N-Gt-MQH" secondAttribute="trailingMargin" id="zM4-RO-hN7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImage" destination="IeD-wK-3R5" id="ln6-KX-MsQ"/>
+                <outlet property="minMaxTemp" destination="gal-lr-GIC" id="56V-SD-pvJ"/>
+                <outlet property="time" destination="Iml-U8-jsx" id="gEC-R2-xiH"/>
+                <outlet property="weatherDescription" destination="7cj-Rf-f36" id="1Le-at-n0y"/>
+            </connections>
+            <point key="canvasLocation" x="455" y="296.5"/>
+        </tableViewCell>
+    </objects>
+</document>
